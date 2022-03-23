@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock App</title>
+</head>
+
+<body>
+    <div class="left-board">
+        <div class="row top">
+            <div class="wrapper">
+                <div class="quotes">„Success is getting what you want. Happiness is wanting what you get.”
+                </div>
+                <div class="author">Dale Carnegie</div>
+            </div>
+            <div class="button-refresh"><img src="./assets/desktop/icon-refresh.svg" alt=""></div>
+        </div>
+        <div class="row bottom ">
+            <div class="welcome">
+                <span ><img id="day-night"  src="./assets/desktop/icon-sun.svg" alt=""></span>
+                <span id="day">Good morning</span>
+                <span>it's currently</span>
+            </div>
+            <div class="time">
+                <span class="time-hours"></span>
+                <span class="time-stref">CET</span>
+            </div>
+            <div class="location"> In
+                <span id="city"> Kołobrzeg</span>
+                <span id="country">Polska</span>
+             </div>
+        </div>
+    </div>
+    <div class="right-board">
+        <div class="button-more"><button>More <span ><img id="arrow" src="./assets/desktop/icon-arrow-up.svg" alt=""></span> </button></div>
+    </div>
+    <div class="active-div">
+        <div class="left">
+            <div class="row">
+            <span class="text">current timezone</span>
+            <span class="data" id="timezone">Europe/Kolberg</span>
+        </div>
+        <div class="row">
+            <span class="text">day of the week</span>
+            <span class="data" id="day-week">5</span>
+        </div>
+        </div>
+        <div class="right">
+            <div class="row">
+            <span class="text">day of the year</span>
+            <span class="data" id="day-year">85</span>
+        </div>
+        <div class="row">
+            <span class="text">week number</span>
+            <span class="data" id="week-number">12</span>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="./dist/app.js"></script>
+</body>
+
+</html>
